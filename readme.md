@@ -1,4 +1,8 @@
+DEMO LIVE:
+- Client: https://wishlist-ferd-client.web.app/
+- Server: https://wishlist-app-ferd.herokuapp.com/
 
+enjoy!
 
 **Summary:**
 

@@ -1,4 +1,4 @@
-const base_url = 'http://localhost:3000/'
+const base_url = 'https://wishlist-app-ferd.herokuapp.com/'
 
 function auth () {
     if(!localStorage.getItem('access_token')) {
