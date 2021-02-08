@@ -1,33 +1,10 @@
-# Phase 2 - Live Code 1
 
-#### WAKTU : 165 Menit / 2 Jam 45 menit
-
-## Hacktiv-WishList
 
 **Summary:**
 
 - Aplikasi ini memungkinkan user untuk menambahkan daftar wishlist,
 - User harus login terlebih dahulu untuk dapat menambah wishlist dan melihat wishlist apa saja yang sudah dibuat (_wishlist yang ditampilkan hanya milik user yang sedang login!_).
 - Setiap kali menambahkan wishlist maka saldo akan berkurang sesuai wishlist
-
-**Notes:**
-
-- Berhubung kompetensi live code ini bukan MVC, maka kamu
-  diperbolehkan untuk tidak membuat controller di server. Apabila kamu
-  membuat routing nya di dalam 1 file routes/index.js juga diperbolehkan.
-- File template HTML telah disediakan, boleh menggunakan template ini, boleh juga
-  menggunakan template sendiri asalkan layout-nya sama.
-
-**Rules:**
-
-- Wajib menggunakan sequelize dan postgre sebagai db serta HTML-CSS-JQuery untuk membuat tampilan aplikasi.
-- Aplikasi ini harus SPA dan Reaktif. Apabila untuk menjalankan fitur-fitur yang terdapat pada aplikasi ini membutuhkan page refresh maka nilai akan dikurangi **5 poin**
-- Tidak memberikan environment variable **beserta** valuenya nilai dikurangi **5 poin**
-- menggunakan `alert()` di sisi client nilai dikurangi **5 poin**
-- Silahkan browsing (googling/stackoverflow/dokumentasi) untuk mencari solusi dari permasalahan yang kalian hadapi. Namun, **DILARANG** membuka/melihat repository/code milik sendiri maupun orang lain. Ketahuan dianggap bentuk kecurangan.
-- Segala bentuk indikasi kecurangan mengakibatkan live-code tidak dinilai dan diproses sesuai aturan yang berlaku di hacktiv8 tanpa perlu konfirmasi dahulu kepada yang bersangkutan.
-
-Untuk demo aplikasi silahkan click [hacktiv_wishlist](https://drive.google.com/file/d/1Ty5g-LGBlnwh5fKGu-2RsC4SLWHKkcSf/view?usp=drivesdk)
 
 ## **RELEASE 1 - Authentication (Login & Register)**
 
