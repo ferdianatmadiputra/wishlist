@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Wishlist</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-light bg-dark justify-content-between">
+        <a class="navbar-brand text-white">My Wishlist</a>
+        <button id="btn-logout" class="btn btn-danger">Logout</button>
+    </nav>
+    <div class="container">
+      <!-- Logout button and notification for success / error event -->
+
+      <div id="alert" class="alert alert-dismissible fade" role="alert">
+        Your notification goes here
+      </div>
+
+      <!-- This is Login Form  -->
+      <div id="login-container" class="bg-light p-3 rounded mb-5">
+        <div class="row d-flex">
+          <div class="col-4">
+            <h2 class="text-dark">Welcome to</h2>
+            <h2 class="text-dark">Shopping WishList</h2>
+            <p class="text-dark">Please Login first</p>
+            <form class="my-4">
+              <div class="form-group">
+                <label for="email-login">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email-login"
+                  id="email-login"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password-login">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password-login"
+                  id="password-login"
+                  required
+                />
+              </div>
+              <button id="btn-login" type="submit" class="btn btn-dark">
+                Submit
+              </button>
+            </form>
+          </div>
+          <dov class="col-8">
+            <img class="card-img" src=".templates/images/background_login.jpeg" alt="">
+          </dov>
+        </div>
+      </div>
+
+      <div id="home-container" class="">
+          <div class="row">
+              <div class="col-4">
+                  <!-- This is Saldo container  -->
+                    <div id="saldo-container" class="card" >
+                        <img src="./template/images/balance.jpeg" class="img-thumbnail" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Current Saldo</h5>
+                        <p class="card-text" id="current_saldo">Rp. 1.000.000</p>
+                        </div>
+                    </div>
+              </div>
+              <div class="col-8">
+                <!-- This is Wishlists -->
+                <div id="wishlists-container">
+                    <h1 class="bg-dark p-2 rounded-sm text-center text-white">My Wishlists</h1>
+                    <h3 class="text-center" id="empty-wishlist">You don't have any wishlist</h3>
+                    <div id="wishlists" class="row my-4 px-4">
+                    <!-- Each of comic will have one of this card -->
+                    <div class="col-4 mb-4">
+                      <img src="https://asset.kompas.com/crops/mcMptWeiOQIwUEiY6gV0O_2yaTQ=/0x0:0x0/780x390/data/photo/2014/03/08/0215393a6000-1780x390.jpg" class="card-img-top" alt="...">
+                      <div class="card text-center">
+                          <div class="card-body">
+                          <h5 class="card-title">MirrorLess Camera</h5>
+                          <p class="card-text">500000</p>
+                          <button class="btn btn-dark" id="btn-delete-wl" type="submit">Delete</button>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="row justify-content-end my-4">
+              <button class="btn btn-dark" id="btn-show-add">Add Wishlist</button>
+          </div>
+      </div>
+      <!-- This is form page to update a comic -->
+      <div id="add-container" class="">
+        <h1>Add Wishlist</h1>
+        <form class="my-4">
+          <div class="form-group">
+            <label for="wl-name">Name</label>
+            <input id="wl-name" type="text" class="form-control" name="wl-name" placeholder="Wishlist Name" />
+          </div>
+          <div class="form-group">
+            <label for="price">Image</label>
+            <input type="text" class="form-control" name="wl-price" id="wl-image" placeholder="Wishlist image url"/>
+          </div>
+          <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" class="form-control" name="wl-price" id="wl-price" placeholder="Wishlist price"/>
+          </div>
+          <div class="form-group">
+            <label for="imageUrl">Description</label>
+            <input type="text" class="form-control" name="wl-desc" id="wl-desc" placeholder="Description"/>
+          </div>
+          <button id="btn-add" type="submit" class="btn btn-dark">
+            Submit
+          </button>
+          <button id="btn-cancel" type="submit" class="btn btn-dark">
+            Cancel
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  </body>
+</html>
